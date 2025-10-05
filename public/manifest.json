@@ -1,0 +1,31 @@
+{
+  "name": "WeddingSeats - Free Wedding Seating Planner",
+  "short_name": "WeddingSeats",
+  "description": "Free wedding seating planner with drag & drop. Plan your wedding table arrangement in 5 languages. Export to PDF/CSV.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9333ea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "utilities", "productivity"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/screenshot-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Wedding seating planner main interface"
+    }
+  ]
+}
