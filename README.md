@@ -36,6 +36,10 @@ npm run build
 npm start
 ```
 
+## Support
+
+If you find this helpful, consider [buying me a coffee](https://buymeacoffee.com/ajdin70230) ☕
+
 ## License
 
 MIT

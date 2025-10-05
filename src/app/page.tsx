@@ -289,7 +289,7 @@ export default function Home() {
             Enjoying WeddingSeats? Help keep it free for everyone! 💜
           </p>
           <a
-            href="https://www.buymeacoffee.com/weddingseats"
+            href="https://buymeacoffee.com/ajdin70230"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-full transition-all transform hover:scale-105 shadow-md"
