@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   authors: [{ name: "WeddingSeats Team" }],
   creator: "WeddingSeats",
   publisher: "WeddingSeats",
-  metadataBase: new URL('https://weddingseats.app'),
+  metadataBase: new URL('https://wedding-seats.com'),
   alternates: {
     canonical: '/',
   },

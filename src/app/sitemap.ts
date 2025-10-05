@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://weddingseats.app'
+  const baseUrl = 'https://wedding-seats.com'
   const currentDate = new Date()
 
   return [

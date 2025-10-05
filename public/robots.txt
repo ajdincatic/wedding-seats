@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://weddingseats.app/sitemap.xml
+Sitemap: https://wedding-seats.com/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 0
