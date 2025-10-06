@@ -7,11 +7,20 @@ import { Guest } from '@/types';
 import AffiliateSection from '@/components/AffiliateSection';
 
 export default function PreviewPage() {
-  const { guests, tables, clearAll, t } = useApp();
+  const { guests, tables, clearAll, t, language } = useApp();
   const printRef = useRef<HTMLDivElement>(null);
 
+  // Map language codes to locale strings
+  const localeMap: Record<string, string> = {
+    en: 'en-US',
+    hr: 'hr-HR',
+    es: 'es-ES',
+    de: 'de-DE',
+    fr: 'fr-FR',
+  };
+
   const openAmazonAffiliate = () => {
-    window.open('https://www.amazon.com/wedding/home?tag=yourtaghere', '_blank', 'noopener,noreferrer');
+    window.open('https://www.amazon.com/wedding/home?tag=weddingseats-20', '_blank', 'noopener,noreferrer');
   };
 
   const handleExportPDF = () => {
@@ -110,7 +119,7 @@ export default function PreviewPage() {
             {t.preview.pageTitle}
           </h2>
           <p className="text-sm md:text-base text-gray-700">
-            {new Date().toLocaleDateString('hr-HR', {
+            {new Date().toLocaleDateString(localeMap[language] || 'en-US', {
               year: 'numeric',
               month: 'long',
               day: 'numeric',
