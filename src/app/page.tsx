@@ -274,29 +274,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Buy Me a Coffee - Prominent Section */}
+      <section className="container mx-auto px-4 py-4">
+        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl shadow-lg p-8 md:p-12 text-center border-2 border-yellow-200">
+          <div className="text-5xl mb-4">☕</div>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+            Enjoying WeddingSeats?
+          </h2>
+          <p className="text-base md:text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+            This tool is 100% free with no ads. If it helped you plan your special day, consider buying me a coffee to keep it running! 💜
+          </p>
+          <a
+            href="https://buymeacoffee.com/ajdin70230"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg rounded-full transition-all transform hover:scale-105 shadow-lg"
+          >
+            ☕ Buy me a coffee
+          </a>
+        </div>
+      </section>
+
       {/* Affiliate Section */}
       <div className="container mx-auto px-4">
         <AffiliateSection />
       </div>
 
       {/* Footer */}
-      <footer className="container mx-auto px-4 py-12 text-center text-gray-700 border-t">
+      <footer className="container mx-auto px-4 py-12 text-center text-gray-700">
         <p className="mb-4">{t.landing.footerText}</p>
-
-        {/* Support / Donate Section */}
-        <div className="mb-4">
-          <p className="text-sm mb-3 text-gray-600">
-            Enjoying WeddingSeats? Help keep it free for everyone! 💜
-          </p>
-          <a
-            href="https://buymeacoffee.com/ajdin70230"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-full transition-all transform hover:scale-105 shadow-md"
-          >
-            ☕ Buy me a coffee
-          </a>
-        </div>
 
         <p className="mt-4 text-sm text-gray-600">
           Keywords: {t.landing.keywords}

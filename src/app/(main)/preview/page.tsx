@@ -87,11 +87,6 @@ export default function PreviewPage() {
         </div>
       </div>
 
-      {/* Affiliate Section */}
-      <div className="no-print mb-6 md:mb-8">
-        <AffiliateSection />
-      </div>
-
       {/* Statistics */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8 no-print">
         <div className="bg-white p-4 md:p-6 rounded-xl shadow-md text-center">
@@ -110,6 +105,33 @@ export default function PreviewPage() {
           <div className="text-2xl md:text-3xl font-bold text-blue-600">{tables.length}</div>
           <div className="text-xs md:text-sm text-gray-700 mt-1">{t.preview.tablesCount}</div>
         </div>
+      </div>
+
+      {/* Buy Me a Coffee - Compact */}
+      <div className="no-print mb-6 md:mb-8">
+        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl shadow-md p-4 md:p-6 text-center border border-yellow-200">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">☕</span>
+              <p className="text-sm md:text-base text-gray-700 font-medium">
+                Helped you plan? Support this free tool!
+              </p>
+            </div>
+            <a
+              href="https://buymeacoffee.com/ajdin70230"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold text-sm rounded-full transition-all transform hover:scale-105 shadow-md"
+            >
+              ☕ Buy me a coffee
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Affiliate Section */}
+      <div className="no-print mb-6 md:mb-8">
+        <AffiliateSection />
       </div>
 
       {/* Print Preview */}
