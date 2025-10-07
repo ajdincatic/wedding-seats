@@ -164,6 +164,20 @@ export const translations = {
     common: {
       loading: 'Učitavanje...',
     },
+    blog: {
+      title: 'Blog: Saveti za Planiranje Venčanja',
+      subtitle: 'Stručni saveti i trikovi za savršeno planiranje vašeg venčanja',
+      readMore: 'Pročitaj više →',
+      relatedArticles: 'Povezani Članci',
+      viewAll: 'Vidi Sve Članke',
+      seoTitle: 'Zašto je Planiranje Rasporeda Gostiju Važno?',
+      seoText1: 'Planiranje rasporeda sedenja na venčanju može značajno uticati na atmosferu i uspeh vašeg velikog dana. Dobar raspored gostiju osigurava da se svi osećaju udobno, pospešuje razgovore između ljudi koji se dobro slažu i pomaže da svako uživa u svečanosti.',
+      seoText2: 'Naši članci pružaju praktične savete zasnovane na iskustvu profesionalnih wedding plannera i povratnim informacijama stotina parova koji su već prošli kroz ovaj proces.',
+      post1Title: '5 Grešaka Pri Rasporedu Gostiju na Venčanju',
+      post1Excerpt: 'Saznajte najčešće greške koje parovi prave prilikom raspoređivanja gostiju i kako ih izbeći za savršeno venčanje.',
+      post2Title: 'Kako Rasporediti Goste Da Svi Budu Srećni',
+      post2Excerpt: 'Praktični vodič za kreiranje idealnog rasporeda gostiju koji će zadovoljiti sve i stvoriti nezaboravnu atmosferu.',
+    },
   },
   en: {
     // Landing page
@@ -311,6 +325,20 @@ export const translations = {
     },
     common: {
       loading: 'Loading...',
+    },
+    blog: {
+      title: 'Blog: Wedding Planning Tips',
+      subtitle: 'Expert tips and tricks for planning your perfect wedding',
+      readMore: 'Read more →',
+      relatedArticles: 'Related Articles',
+      viewAll: 'View All Articles',
+      seoTitle: 'Why Is Guest Seating Planning Important?',
+      seoText1: 'Planning seating arrangements at a wedding can significantly impact the atmosphere and success of your big day. A good guest arrangement ensures everyone feels comfortable, promotes conversations between people who get along well, and helps everyone enjoy the celebration.',
+      seoText2: 'Our articles provide practical advice based on the experience of professional wedding planners and feedback from hundreds of couples who have already gone through this process.',
+      post1Title: '5 Wedding Guest Seating Mistakes',
+      post1Excerpt: 'Learn the most common mistakes couples make when arranging guests and how to avoid them for a perfect wedding.',
+      post2Title: 'How to Arrange Guests So Everyone Is Happy',
+      post2Excerpt: 'A practical guide to creating the ideal guest arrangement that will satisfy everyone and create an unforgettable atmosphere.',
     },
   },
   es: {
@@ -460,6 +488,20 @@ export const translations = {
     common: {
       loading: 'Cargando...',
     },
+    blog: {
+      title: 'Blog: Consejos para Planificar Bodas',
+      subtitle: 'Consejos y trucos de expertos para planificar tu boda perfecta',
+      readMore: 'Leer más →',
+      relatedArticles: 'Artículos Relacionados',
+      viewAll: 'Ver Todos los Artículos',
+      seoTitle: '¿Por Qué Es Importante la Planificación de Mesas?',
+      seoText1: 'Planificar la distribución de asientos en una boda puede impactar significativamente la atmósfera y el éxito de tu gran día. Una buena distribución de invitados asegura que todos se sientan cómodos, promueve conversaciones entre personas que se llevan bien y ayuda a que todos disfruten la celebración.',
+      seoText2: 'Nuestros artículos proporcionan consejos prácticos basados en la experiencia de planificadores de bodas profesionales y comentarios de cientos de parejas que ya han pasado por este proceso.',
+      post1Title: '5 Errores al Organizar Mesas de Boda',
+      post1Excerpt: 'Aprende los errores más comunes que cometen las parejas al organizar a los invitados y cómo evitarlos para una boda perfecta.',
+      post2Title: 'Cómo Organizar a los Invitados Para Que Todos Sean Felices',
+      post2Excerpt: 'Una guía práctica para crear la disposición ideal de invitados que satisfará a todos y creará una atmósfera inolvidable.',
+    },
   },
   de: {
     // Landing page
@@ -608,6 +650,20 @@ export const translations = {
     common: {
       loading: 'Lädt...',
     },
+    blog: {
+      title: 'Blog: Hochzeitsplanungstipps',
+      subtitle: 'Expertentipps und Tricks für die Planung Ihrer perfekten Hochzeit',
+      readMore: 'Mehr lesen →',
+      relatedArticles: 'Verwandte Artikel',
+      viewAll: 'Alle Artikel Ansehen',
+      seoTitle: 'Warum Ist die Sitzordnungsplanung Wichtig?',
+      seoText1: 'Die Planung der Sitzordnung bei einer Hochzeit kann die Atmosphäre und den Erfolg Ihres großen Tages erheblich beeinflussen. Eine gute Gästeordnung stellt sicher, dass sich alle wohl fühlen, fördert Gespräche zwischen Menschen, die sich gut verstehen, und hilft allen, die Feier zu genießen.',
+      seoText2: 'Unsere Artikel bieten praktische Ratschläge, die auf der Erfahrung professioneller Hochzeitsplaner und dem Feedback von Hunderten von Paaren basieren, die diesen Prozess bereits durchlaufen haben.',
+      post1Title: '5 Fehler bei der Hochzeitssitzordnung',
+      post1Excerpt: 'Erfahren Sie die häufigsten Fehler, die Paare bei der Anordnung der Gäste machen, und wie Sie diese für eine perfekte Hochzeit vermeiden können.',
+      post2Title: 'So Ordnen Sie Gäste An, Damit Alle Glücklich Sind',
+      post2Excerpt: 'Ein praktischer Leitfaden zur Erstellung der idealen Gästeanordnung, die alle zufriedenstellt und eine unvergessliche Atmosphäre schafft.',
+    },
   },
   fr: {
     // Landing page
@@ -755,6 +811,20 @@ export const translations = {
     },
     common: {
       loading: 'Chargement...',
+    },
+    blog: {
+      title: 'Blog: Conseils pour Planifier un Mariage',
+      subtitle: 'Conseils et astuces d\'experts pour planifier votre mariage parfait',
+      readMore: 'Lire la suite →',
+      relatedArticles: 'Articles Connexes',
+      viewAll: 'Voir Tous les Articles',
+      seoTitle: 'Pourquoi la Planification du Plan de Table Est-elle Importante?',
+      seoText1: 'La planification du plan de table lors d\'un mariage peut avoir un impact significatif sur l\'atmosphère et le succès de votre grand jour. Une bonne disposition des invités garantit que tout le monde se sent à l\'aise, favorise les conversations entre personnes qui s\'entendent bien et aide chacun à profiter de la célébration.',
+      seoText2: 'Nos articles fournissent des conseils pratiques basés sur l\'expérience de planificateurs de mariage professionnels et les retours de centaines de couples qui ont déjà vécu ce processus.',
+      post1Title: '5 Erreurs dans le Plan de Table de Mariage',
+      post1Excerpt: 'Apprenez les erreurs les plus courantes que font les couples lors de l\'organisation des invités et comment les éviter pour un mariage parfait.',
+      post2Title: 'Comment Organiser les Invités Pour Que Tout le Monde Soit Heureux',
+      post2Excerpt: 'Un guide pratique pour créer la disposition idéale des invités qui satisfera tout le monde et créera une atmosphère inoubliable.',
     },
   },
 };

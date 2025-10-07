@@ -50,5 +50,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/blog/5-wedding-seating-mistakes`,
+      lastModified: new Date('2025-10-06'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/how-to-arrange-wedding-guests`,
+      lastModified: new Date('2025-10-07'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ]
 }

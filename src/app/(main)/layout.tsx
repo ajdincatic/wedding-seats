@@ -12,6 +12,7 @@ import TablesIcon from '@/components/icons/TablesIcon';
 import SeatingIcon from '@/components/icons/SeatingIcon';
 import LayoutIcon from '@/components/icons/LayoutIcon';
 import PreviewIcon from '@/components/icons/PreviewIcon';
+import BlogIcon from '@/components/icons/BlogIcon';
 
 interface ModalState {
   isOpen: boolean;
@@ -69,6 +70,37 @@ export default function AppLayout({ children }: { children: ReactNode }) {
   });
   const pathname = usePathname();
 
+  // Automatic language detection
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const supportedLangs: Language[] = ['en', 'hr', 'es', 'de', 'fr'];
+    
+    // 1. Check URL parameter first (?lang=hr)
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang') as Language;
+    
+    if (urlLang && supportedLangs.includes(urlLang)) {
+      setLanguage(urlLang);
+      localStorage.setItem('preferredLanguage', urlLang);
+      return;
+    }
+
+    // 2. Check localStorage
+    const savedLang = localStorage.getItem('preferredLanguage') as Language;
+    if (savedLang && supportedLangs.includes(savedLang)) {
+      setLanguage(savedLang);
+      return;
+    }
+
+    // 3. Detect from browser language
+    const browserLang = navigator.language.split('-')[0] as Language;
+    if (supportedLangs.includes(browserLang)) {
+      setLanguage(browserLang);
+      localStorage.setItem('preferredLanguage', browserLang);
+    }
+  }, []);
+
   const t = getTranslations(language);
 
   const showModal = (config: Omit<ModalState, 'isOpen'>) => {
@@ -110,11 +142,17 @@ export default function AppLayout({ children }: { children: ReactNode }) {
     setLoaded(true);
   }, []);
 
-  // Update HTML lang attribute when language changes (for better SEO)
+  // Update HTML lang attribute and localStorage when language changes
   useEffect(() => {
-    if (typeof document !== 'undefined') {
-      document.documentElement.lang = language;
-    }
+    if (typeof window === 'undefined') return;
+    
+    document.documentElement.lang = language;
+    localStorage.setItem('preferredLanguage', language);
+    
+    // Update URL parameter without page reload
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', language);
+    window.history.replaceState({}, '', url.toString());
   }, [language]);
 
   useEffect(() => {
@@ -338,6 +376,17 @@ export default function AppLayout({ children }: { children: ReactNode }) {
                   <PreviewIcon className="w-5 h-5" />
                   <span>{t.nav.preview}</span>
                 </Link>
+                <Link
+                  href="/blog"
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
+                    pathname?.startsWith('/blog')
+                      ? 'bg-purple-100 text-purple-900 font-semibold'
+                      : 'text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  <BlogIcon className="w-5 h-5" />
+                  <span>Blog</span>
+                </Link>
 
                 {/* Language Switcher with Flags */}
                 <div className="ml-4 border-l pl-4 relative">
@@ -441,6 +490,16 @@ export default function AppLayout({ children }: { children: ReactNode }) {
                   >
                     <PreviewIcon className="w-5 h-5" />
                     <span>{t.nav.preview}</span>
+                  </Link>
+                  <Link
+                    href="/blog"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
+                      pathname?.startsWith('/blog') ? 'bg-purple-100 text-purple-900 font-semibold' : 'text-gray-700'
+                    }`}
+                  >
+                    <BlogIcon className="w-5 h-5" />
+                    <span>Blog</span>
                   </Link>
 
                   <div className="px-4 pt-4 border-t">

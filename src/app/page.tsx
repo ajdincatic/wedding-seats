@@ -197,7 +197,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <main className="container mx-auto px-4 py-12 md:py-16 lg:py-24">
+      <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             {t.landing.title}<br />
@@ -271,6 +271,64 @@ export default function Home() {
             <li>{t.landing.feature7}</li>
             <li>{t.landing.feature8}</li>
           </ul>
+        </div>
+      </section>
+
+      {/* Blog Section */}
+      <section className="container mx-auto px-4 py-12 max-w-4xl">
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12">
+          <div className="text-center mb-8">
+            <div className="text-5xl mb-4">📝</div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              {t.blog.title}
+            </h2>
+            <p className="text-lg text-gray-700">
+              {t.blog.subtitle}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <Link 
+              href="/blog/5-wedding-seating-mistakes"
+              className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1"
+            >
+              <div className="text-4xl mb-3">🚫</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                {t.blog.post1Title}
+              </h3>
+              <p className="text-gray-700 text-sm mb-3">
+                {t.blog.post1Excerpt}
+              </p>
+              <span className="text-purple-600 font-semibold text-sm">
+                {t.blog.readMore}
+              </span>
+            </Link>
+
+            <Link 
+              href="/blog/how-to-arrange-wedding-guests"
+              className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1"
+            >
+              <div className="text-4xl mb-3">😊</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                {t.blog.post2Title}
+              </h3>
+              <p className="text-gray-700 text-sm mb-3">
+                {t.blog.post2Excerpt}
+              </p>
+              <span className="text-purple-600 font-semibold text-sm">
+                {t.blog.readMore}
+              </span>
+            </Link>
+          </div>
+
+          <div className="text-center">
+            <Link 
+              href="/blog"
+              className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+            >
+              {t.blog.viewAll}
+            </Link>
+          </div>
         </div>
       </section>
 
